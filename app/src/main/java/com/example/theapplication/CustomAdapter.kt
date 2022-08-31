@@ -12,9 +12,9 @@ import com.bumptech.glide.Glide
 class CustomAdapter(var context: Context, var data:ArrayList<Product>):BaseAdapter() {
     private class ViewHolder(row:View?){
         var mTxtName:TextView
-        lateinit var mTxtPhoneNumber:TextView
-        lateinit var mTxtPrice:TextView
-        lateinit var mTxtLocation:TextView
+        var mTxtPhoneNumber:TextView
+        var mTxtPrice:TextView
+         var mTxtLocation:TextView
         var mImgPhoto:ImageView
         init {
             this.mTxtName = row?.findViewById(R.id.mTvName) as TextView
